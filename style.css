@@ -1,0 +1,50 @@
+#Loader_css{
+	/*CREATION DU LOADER*/
+
+	height: 100px;
+	width: 100px;
+	border: 10px solid #CDDDFF  ;
+	border-top: 10px solid #FFD44D; 
+	border-bottom: 10px solid #4DFF83;
+	border-right: 10px solid #4DA3FF; 
+	border-left: 10px solid #B94DFF; 
+	border-radius: 50%;
+	box-shadow: 3px 3px 3px black;
+	
+
+	/*CREATION DU LOADER*/
+
+
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+
+	/*PREPARER LANIMATION DU LOADER*/
+	-webkit-animation: spin 5s linear infinite; /*pour chrome internet explorer etc*/
+	-o-animation: spin 5s linear infinite; /* pour mozilla*/
+	animation: spin 5s linear infinite ;
+
+}
+
+	/*ANIMATION DU LOADER*/
+
+@keyframes spin {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+
+}
+@-webkit-keyframes spin {
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+
+}
+
+
